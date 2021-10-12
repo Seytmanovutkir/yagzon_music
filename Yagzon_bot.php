@@ -28,7 +28,7 @@ $guruhlar = file_get_contents("stat/group.list");
 $userlar = file_get_contents("stat/user.txt");
 mkdir("stat");
 $user = $message -> from -> username;
-$modxe = file_get_contents("user.txt");
+$modxe = file_get_contents("stat/user.txt");
 
 $kid = 'Yagzon_Guruh1';
 $kkid = '@Yagzon_guruh1';
@@ -224,7 +224,7 @@ if($text == "/start") {
 }
     if($data == 'off'){
 bot('editMessageText',[
-'chat_id'=>$callcid,
+'chat_id'=>$cid,
 'message_id'=>$message_id,
             'text'=>"
 Xabar
@@ -250,7 +250,7 @@ if($data == "co" and $update->callback_query->message->chat->id == $admin ){
 }
 
 if($data == "ce" and $update->callback_query->message->chat->id == $admin){
-    file_put_contents("user.txt","yas");
+    file_put_contents("stat/user.txt","yas");
     bot('EditMessageText',[
     'chat_id'=>$update->callback_query->message->chat->id,
     'message_id'=>$update->callback_query->message->message_id,
@@ -272,7 +272,7 @@ if($text and $modxe == "yas" and $cid == $admin ){
 'disable_web_page_preview'=>true,
 
 ]);
-    file_put_contents("user.txt","no");
+    file_put_contents("stat/user.txt","no");
 
 }
 }
