@@ -1,6 +1,6 @@
 <?php
 ob_start();
-defined('API_KEY',"2076653993:AAEgBJWzL4YpWeFIN7g1f09FfU-KwSUBsT8");
+define('API_KEY',"2076653993:AAEgBJWzL4YpWeFIN7g1f09FfU-KwSUBsT8");
 $admin ="854021271";
 
 //Kod @Black_Codercik ga tegishli iltimos mualliflik huquqini o'zgartirmang zero bu birovning mehnati
